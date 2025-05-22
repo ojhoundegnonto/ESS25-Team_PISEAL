@@ -24,10 +24,6 @@ This template provides the following suggested organizaiton structure for the pr
 * `model-card.md`
 <br> Description (following a metadata standard) of any machine learning models used in the project
 
-# Recommended content for your README.md file:
-
-(you can remove the content here and above from your final project README.md file so that it begins with the Project or Team Name title below)
-
 # Project or Team Name
 
 ## Project Title and Introduction
