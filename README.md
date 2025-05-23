@@ -1,6 +1,6 @@
 # Physical Processes Impacting Regional Sea Level (PISeaL)
 
-<div aling="justify">
+<div align="justify">
 The primary objective of this analysis is to derive and examine the sea level budget using the ECCO (Estimating the Circulation and Climate of the Ocean) model version 4 release 5 (v4r5), with a particular focus on understanding the processes—specifically manometric (mass-related) and steric (density-related) effects—that influence regional sea level changes along the U.S. East Coast. To accomplish this, several key oceanographic fields are utilized, including sea surface height (SSH), density, volume fluxes, and surface freshwater and salt fluxes, among others. The EMU budget tool is employed to facilitate the evaluation and closure of these budgets, allowing for a detailed attribution of sea level changes to their underlying mechanisms. By leveraging these tools and datasets, the analysis aims to clarify how different physical processes contribute to observed variations in regional sea level, enhancing our understanding of both natural variability and potential future changes
 </div>
 
