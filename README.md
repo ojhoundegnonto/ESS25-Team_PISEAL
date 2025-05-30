@@ -48,7 +48,7 @@ This template provides the following suggested organizaiton structure for the pr
 <img src="figures/ECCO2025_PiSeal_YL_and_OJH.PNG" height="450" alt="team photo"  />
 </div>
 
-From left to right: [Odilon J. Houndegnonto](https://ojhoundegnonto.github.io) (from NASA-JPL/Caltech) and [Yueyang Lu](https://yueyanglu.github.io/) (from CROPS/UFS).
+From left to right: [Odilon J. Houndegnonto](https://ojhoundegnonto.github.io) (from NASA-JPL/Caltech) and [Yueyang Lu](https://yueyanglu.github.io/) (from COAPS/FSU).
 
 
 List all participants on the project. Here is a good space to share your personal goals for the hackweek and things you can help with.
