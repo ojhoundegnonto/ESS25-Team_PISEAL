@@ -5,17 +5,21 @@ The primary objective of this analysis is to derive and examine the sea level bu
 </div>
 
 ## Motivation
-Global sea level has been rising at approximately 4.5 mm per year in the 21st century, which is about twice as fast as the rate observed during the 20th century ([Hamlington et al. 2024](https://www.nature.com/articles/s43247-024-01761-5)). However, this rise is not spatially uniform; different regions are dominated by different processes, leading to significant variations in the rate and causes of sea level change around the world
+Global sea level has been rising at approximately 4.5 mm per year in the 21st century, which is about twice as fast as the rate observed during the 20th century ([Hamlington et al. 2024](https://www.nature.com/articles/s43247-024-01761-5)). However, this rise is not spatially uniform; different regions are dominated by different processes, leading to significant variations in the rate and causes of sea level change around the world.
 
 ## Scientific questions
-
 - What physical processes influence sea level changes in different regions?
 - What are their relative importance?
 
-<!-- When creating a project repository from this template choose "Public" so other participants can follow progress. Add a "topic" to your repository details (click on the gear icon next to the "About" section on the repository page) to help others find your work (e.g. `ecco-hackweek-2024`). -->
+## Approaches
+Sea Level = manometric & steric components ([Piecuch et al. 2019](https://doi.org/10.1029/2019JC015339)):
 
+# $\eta = \eta_m + \eta_s = \frac{p_b}{\rho_0 g} - \frac{1}{\rho_0}\frac{H+\eta}{H}\int_{-H}^0{\rho'}dz^* $
 
+Steric = thermosteric & halosteric components:
 
+# $\eta_{s-T} = - \frac{1}{\rho_0}\frac{H+\eta}{H}\int_{-H}^0{ [\rho(S_r,T,p) - \rho(S_r,T_r,p)] }dz^* $ 
+# $\eta_{s-S} = - \frac{1}{\rho_0}\frac{H+\eta}{H}\int_{-H}^0{ [\rho(S,T_r,p) - \rho(S_r,T_r,p)] }dz^* $
 
 ## Files and folders in your project repository
 
@@ -38,11 +42,7 @@ This template provides the following suggested organizaiton structure for the pr
 
 # Project or Team Name
 
-## Project Title and Introduction
-
-Provide a brief introduction describing the proposed work. Be sure to also decribe what skills team members will get to learn and practice as part of this project.
-
-### Collaborators
+### Team members
 
 List all participants on the project. Here is a good space to share your personal goals for the hackweek and things you can help with.
 
@@ -59,46 +59,18 @@ List all participants on the project. Here is a good space to share your persona
 
 Provide a few sentences describing the problem are you going to explore. If this is a technical exploration of software or data science methods, explain why this work is important in a broader context and specific applications of this work.
 
-## Data and Methods
+## Data and Resources
 
-### Data
+ECCOv4r5 dataset files used:
 
-Briefly describe and provide citations for the data that will be used (size, format, how to access).
+- OCEAN_TEMPERATURE_SALINITY_mon_mean_native_llc090_ECCOV4r5
+- OCEAN_DENS_STRAT_PRESS_mon_mean_native_llc090_ECCOV4r5
+- OCEAN_BOTTOM_PRESSURE_mon_mean_native_llc090_ECCOV4r5
+- SEA_SURFACE_HEIGHT_mon_mean_native_llc090_ECCOV4r5
+- ECCO_L4_GEOMETRY_LLC0090GRID_V4R4
 
-### Existing methods
+We also used ECCO tutorial: https://ecco-v4-python-tutorial.readthedocs.io/ 
 
-How would you or others traditionally try to address this problem? Provide any relevant citations to prior work.
-
-### Proposed methods/tools
-
-What new approaches would you like to implement for addressing your specific question(s) or application(s)?
-
-Will your project use machine learning methods? If so, we invite you to create a [model card](model-card.md)!
-
-### Additional resources or background reading
-
-Optional: links to manuscripts or technical documents providing background information, context, or other relevant information.
-
-## Project goals and tasks
-
-### Project goals
-
-List the specific project goals or research questions you want to answer. Think about what outcomes or deliverables you'd like to create (e.g. a series of tutorial notebooks demonstrating how to work with a dataset, results of an anaysis to answer a science question, an example of applying a new analysis method, or a new python package).
-
-* Goal 1
-* Goal 2
-* ...
-
-### Tasks
-
-What are the individual tasks or steps that need to be taken to achieve each of the project goals identified above? What are the skills that participants will need or will learn and practice to complete each of these tasks? Think about which tasks are dependent on prior tasks, or which tasks can be performed in parallel.
-
-* Task 1 (all team members will learn to use GitHub)
-* Task 2 (team members will use the scikit-learn python library)
-  * Task 2a (assigned to team member A)
-  * Task 2b (assigned to team member B)
-* Task 3
-* ...
 
 ## Project Results
 
