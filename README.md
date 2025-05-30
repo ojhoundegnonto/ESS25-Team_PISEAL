@@ -28,7 +28,7 @@ List all participants on the project. Here is a good space to share your persona
 | Name | Personal goals | Can help with |
 | ------------- | ------------- | ------------- |
 | Yueyang Lu | learn how to use python to work with ocean model data  | sea level dynamics, MATLAB  | 
-| Odilon J. Houndegnonto| Strengthen my skills with ECCO products—including their strengths, limitations, access, implementation, and configuration (e.g. work from tile format to regular latlon format) | Ocean Physics, Python and MATLAB | 
+| Odilon Joel Houndegnonto| Strengthen my skills with ECCO products—including their strengths, limitations, access, implementation, and configuration (e.g. work from tile format to regular latlon format) | Ocean Physics, Python and MATLAB | 
 
 
 ## Project summary 
