@@ -71,9 +71,10 @@ ECCOv4r5 dataset files used:
 
 We also used ECCO tutorial: https://ecco-v4-python-tutorial.readthedocs.io/ 
 
-
 ## Project Results
 
-Use this section to briefly summarize your project results. This could take the form of describing the progress your team made to answering a research question, developing a tool or tutorial, interesting things found in exploring a new dataset, lessons learned for applying a new method, personal accomplishments of each team member, or anything else the team wants to share.
+ECCO’s dynamical sea surface height can be decomposed into manometric (mass-related) and steric (density-related) components across most of the global oceans. In shelf regions, mass changes tend to play a more significant role, whereas in the open ocean, density changes are generally dominant. Within the steric component, thermosteric effects (temperature-related) are typically more influential than halosteric effects (salinity-related). There are notable regional differences in the effects of these components: over the European shelf, the manometric component ($\eta_m$) is the primary driver of total sea level variability, while in the eastern tropical Atlantic, particularly the Gulf of Guinea, the steric component ($\eta_s$) dominates total sea level variability, with $\eta_m$ contributing mainly to long-term trends.
 
-You could include figures or images here, links to notebooks or code elsewhere in the repository (such as in the [notebooks](notebooks/) folder), and information on how others can run your notebooks or code.
+
+
+
