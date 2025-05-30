@@ -42,6 +42,10 @@ This template provides the following suggested organizaiton structure for the pr
 
 # Project or Team Name
 
+<div align="center">
+<img src="figures/IMG_3871.PNG" height="450" alt="team photo"  />
+</div>
+
 ### Team members
 
 List all participants on the project. Here is a good space to share your personal goals for the hackweek and things you can help with.
@@ -74,7 +78,6 @@ We also used ECCO tutorial: https://ecco-v4-python-tutorial.readthedocs.io/
 ## Project Results
 
 ECCO’s dynamical sea surface height can be decomposed into manometric (mass-related) and steric (density-related) components across most of the global oceans. In shelf regions, mass changes tend to play a more significant role, whereas in the open ocean, density changes are generally dominant. Within the steric component, thermosteric effects (temperature-related) are typically more influential than halosteric effects (salinity-related). There are notable regional differences in the effects of these components: over the European shelf, the manometric component ($\eta_m$) is the primary driver of total sea level variability, while in the eastern tropical Atlantic, particularly the Gulf of Guinea, the steric component ($\eta_s$) dominates total sea level variability, with $\eta_m$ contributing mainly to long-term trends.
-
 
 
 
