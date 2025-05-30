@@ -43,17 +43,17 @@ This template provides the following suggested organizaiton structure for the pr
 # Project or Team Name
 
 <div align="center">
-<img src="figures/IMG_3871.PNG" height="450" alt="team photo"  />
+<img src="figures/ECCO2025_PiSeal_YL_and_OJH.PNG" height="450" alt="team photo"  />
 </div>
 
 ### Team members
 
 List all participants on the project. Here is a good space to share your personal goals for the hackweek and things you can help with.
 
-| Name | Personal goals | Can help with | Role |
-| ------------- | ------------- | ------------- | ------------- |
-| Yueyang Lu | learn how to use python to work with ocean model data  | sea level dynamics, MATLAB  | Project Lead |
-| Odilon J. Houndegnonto| Practice leading a software project | machine learning and python (scipy, scikit-learn) | Project Lead |
+| Name | Personal goals | Can help with |
+| ------------- | ------------- | ------------- |
+| Yueyang Lu | learn how to use python to work with ocean model data  | sea level dynamics, MATLAB  | 
+| Odilon J. Houndegnonto| Practice leading a software project | machine learning and python (scipy, scikit-learn) | 
 <!--| Alan T. | learning about your dataset | GitHub, Jupyter, cloud computing | Project Helper |-->
 <!--| Rachel C. | learn to use github, resolve merge conflicts | I am familiar with our dataset | Team Member  |-->
 <!--| ... | ... | ... | ... |-->
