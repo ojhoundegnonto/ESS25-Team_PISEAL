@@ -21,24 +21,21 @@ Steric = thermosteric & halosteric components:
 # $\eta_{s-T} = - \frac{1}{\rho_0}\frac{H+\eta}{H}\int_{-H}^0{ [\rho(S_r,T,p) - \rho(S_r,T_r,p)] }dz^* $ 
 # $\eta_{s-S} = - \frac{1}{\rho_0}\frac{H+\eta}{H}\int_{-H}^0{ [\rho(S,T_r,p) - \rho(S_r,T_r,p)] }dz^* $
 
-## Files and folders in your project repository
+## Files and folders in this project repository
 
-This template provides the following suggested organizaiton structure for the project repository, but each project team is free to organize their repository as they see fit.
+The organizaiton structure for this project repository is as follow:
 
 * **`contributors/`**
-<br> Each team member can create their own folder under contributors, within which they can work on their own scripts, notebooks, and other files. Having a dedicated folder for each person helps to prevent conflicts when merging with the main branch. This is a good place for team members to start off exploring data and methods for the project.
+<br> Contains each team member work on their own scripts, notebooks, and other files.
 * **`notebooks/`**
-<br> Notebooks that are considered delivered results for the project should go in here.
-* **`scripts/`**
-<br> Code that is shared by the team should go in here (e.g. functions or subroutines). These will be files other than Jupyter Notebooks such as Python scripts (.py).
+<br> All Jupyter notebooks generated for this project are included here. Here, are all scripts that all team member work on together.
 * `.gitignore`
-<br> This file sets the files that will be globally ignored by `git` for the project. (e.g. you may want git to ignore temporary files or large data files, [read more about ignoring files here](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files))
+<br> This file sets the files that will be globally ignored by git for the project. (e.g. you may want git to ignore temporary files or large data files, read more about ignoring files [here](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files))
 * `environment.yml`
 <br> `conda` environment description needed to run this project.
 * `README.md`
-<br> Description of the project (see suggested headings below)
-* `model-card.md`
-<br> Description (following a metadata standard) of any machine learning models used in the project
+<br> Description of the project (see below)
+
 
 # Project or Team Name
 
