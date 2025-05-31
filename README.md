@@ -1,97 +1,76 @@
 # Physical Processes Impacting Regional Sea Level (PISeaL)
+## Files and folders in this project repository
 
-<div align="justify">
-The primary objective of this analysis is to derive and examine the sea level budget using the ECCO (Estimating the Circulation and Climate of the Ocean) model version 4 release 5 (v4r5), with a particular focus on understanding the processes—specifically manometric (mass-related) and steric (density-related) effects—that influence regional sea level changes along the U.S. East Coast. To accomplish this, several key oceanographic fields are utilized, including sea surface height (SSH), density, volume fluxes, and surface freshwater and salt fluxes, among others. The EMU budget tool is employed to facilitate the evaluation and closure of these budgets, allowing for a detailed attribution of sea level changes to their underlying mechanisms. By leveraging these tools and datasets, the analysis aims to clarify how different physical processes contribute to observed variations in regional sea level, enhancing our understanding of both natural variability and potential future changes
-</div>
-
-<!-- When creating a project repository from this template choose "Public" so other participants can follow progress. Add a "topic" to your repository details (click on the gear icon next to the "About" section on the repository page) to help others find your work (e.g. `ecco-hackweek-2024`). -->
-
-
-## Files and folders in your project repository
-
-This template provides the following suggested organizaiton structure for the project repository, but each project team is free to organize their repository as they see fit.
+The organizaiton structure for this project repository is as follow:
 
 * **`contributors/`**
-<br> Each team member can create their own folder under contributors, within which they can work on their own scripts, notebooks, and other files. Having a dedicated folder for each person helps to prevent conflicts when merging with the main branch. This is a good place for team members to start off exploring data and methods for the project.
+<br> Contains each team member work on their own scripts, notebooks, and other files.
 * **`notebooks/`**
-<br> Notebooks that are considered delivered results for the project should go in here.
-* **`scripts/`**
-<br> Code that is shared by the team should go in here (e.g. functions or subroutines). These will be files other than Jupyter Notebooks such as Python scripts (.py).
+<br> All Jupyter notebooks generated for this project are included here. Here, are all scripts that all team member work on together.
 * `.gitignore`
-<br> This file sets the files that will be globally ignored by `git` for the project. (e.g. you may want git to ignore temporary files or large data files, [read more about ignoring files here](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files))
+<br> This file sets the files that will be globally ignored by git for the project. (e.g. you may want git to ignore temporary files or large data files, read more about ignoring files [here](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files))
 * `environment.yml`
 <br> `conda` environment description needed to run this project.
 * `README.md`
-<br> Description of the project (see suggested headings below)
-* `model-card.md`
-<br> Description (following a metadata standard) of any machine learning models used in the project
+<br> Description of the project (see below)
 
-# Project or Team Name
+### Team members
 
-## Project Title and Introduction
+<div align="center">
+<img src="figures/ECCO2025_PiSeal_YL_and_OJH.PNG" height="450" alt="PiSeal Team photo"  />
+</div>
 
-Provide a brief introduction describing the proposed work. Be sure to also decribe what skills team members will get to learn and practice as part of this project.
+From left to right: [Odilon J. Houndegnonto](https://ojhoundegnonto.github.io) (from NASA-JPL/Caltech) and [Yueyang Lu](https://yueyanglu.github.io/) (from COAPS/FSU).
 
-### Collaborators
 
 List all participants on the project. Here is a good space to share your personal goals for the hackweek and things you can help with.
 
-| Name | Personal goals | Can help with | Role |
-| ------------- | ------------- | ------------- | ------------- |
-| Katherine J. | I want to learn specific python libraries for working with these data  | I can help with understanding our dataset, programming in R  | Project Lead |
-| Rosalind F. | Practice leading a software project | machine learning and python (scipy, scikit-learn) | Project Lead |
-| Alan T. | learning about your dataset | GitHub, Jupyter, cloud computing | Project Helper |
-| Rachel C. | learn to use github, resolve merge conflicts | I am familiar with our dataset | Team Member  |
-| ... | ... | ... | ... |
-| ... | ... | ... | ... |
+| Name | Personal goals | Can help with |
+| ------------- | ------------- | ------------- |
+| Yueyang Lu | learn how to use python to work with ocean model data  | sea level dynamics, MATLAB  | 
+| Odilon Joel Houndegnonto| Strengthen my skills with ECCO products—including their strengths, limitations, access, implementation, and configuration (e.g. work from tile format to regular latlon format) | Ocean Physics, Python and MATLAB | 
 
-### The problem
 
-Provide a few sentences describing the problem are you going to explore. If this is a technical exploration of software or data science methods, explain why this work is important in a broader context and specific applications of this work.
+## Project summary 
+<div align="justify">
+The primary objective of this analysis is to derive and examine the sea level budget using the ECCO (Estimating the Circulation and Climate of the Ocean) model version 4 release 5 (v4r5), with a particular focus on understanding the processes—specifically manometric (mass-related) and steric (density-related) effects—that influence regional sea level changes along the U.S. East Coast. To accomplish this, several key oceanographic fields are utilized, including sea surface height (SSH), density, volume fluxes, and surface freshwater and salt fluxes, among others. By leveraging these tools and datasets, the analysis aims to clarify how different physical processes contribute to observed variations in regional sea level, enhancing our understanding of both natural variability and potential future changes.
+</div>
 
-## Data and Methods
+## Motivation
+Global sea level has been rising at approximately 4.5 mm per year in the 21st century, which is about twice as fast as the rate observed during the 20th century ([Hamlington et al. 2024](https://www.nature.com/articles/s43247-024-01761-5)). However, this rise is not spatially uniform; different regions are dominated by different processes, leading to significant variations in the rate and causes of sea level change around the world.
 
-### Data
+## Scientific questions
+- What physical processes influence sea level changes in different regions?
+- What are their relative importance?
 
-Briefly describe and provide citations for the data that will be used (size, format, how to access).
+## Approaches
+Sea Level = manometric & steric components ([Piecuch et al. 2019](https://doi.org/10.1029/2019JC015339)):
 
-### Existing methods
+# $\eta = \eta_m + \eta_s = \frac{p_b}{\rho_0 g} - \frac{1}{\rho_0}\frac{H+\eta}{H}\int_{-H}^0{\rho'}dz^* $
 
-How would you or others traditionally try to address this problem? Provide any relevant citations to prior work.
+Steric = thermosteric & halosteric components:
 
-### Proposed methods/tools
+# $\eta_{s-T} = - \frac{1}{\rho_0}\frac{H+\eta}{H}\int_{-H}^0{ [\rho(S_r,T,p) - \rho(S_r,T_r,p)] }dz^* $ 
+# $\eta_{s-S} = - \frac{1}{\rho_0}\frac{H+\eta}{H}\int_{-H}^0{ [\rho(S,T_r,p) - \rho(S_r,T_r,p)] }dz^* $
 
-What new approaches would you like to implement for addressing your specific question(s) or application(s)?
 
-Will your project use machine learning methods? If so, we invite you to create a [model card](model-card.md)!
+## Data and Resources
 
-### Additional resources or background reading
+ECCOv4r5 dataset files used:
 
-Optional: links to manuscripts or technical documents providing background information, context, or other relevant information.
+- OCEAN_TEMPERATURE_SALINITY_mon_mean_native_llc090_ECCOV4r5
+- OCEAN_DENS_STRAT_PRESS_mon_mean_native_llc090_ECCOV4r5
+- OCEAN_BOTTOM_PRESSURE_mon_mean_native_llc090_ECCOV4r5
+- SEA_SURFACE_HEIGHT_mon_mean_native_llc090_ECCOV4r5
+- ECCO_L4_GEOMETRY_LLC0090GRID_V4R4
 
-## Project goals and tasks
-
-### Project goals
-
-List the specific project goals or research questions you want to answer. Think about what outcomes or deliverables you'd like to create (e.g. a series of tutorial notebooks demonstrating how to work with a dataset, results of an anaysis to answer a science question, an example of applying a new analysis method, or a new python package).
-
-* Goal 1
-* Goal 2
-* ...
-
-### Tasks
-
-What are the individual tasks or steps that need to be taken to achieve each of the project goals identified above? What are the skills that participants will need or will learn and practice to complete each of these tasks? Think about which tasks are dependent on prior tasks, or which tasks can be performed in parallel.
-
-* Task 1 (all team members will learn to use GitHub)
-* Task 2 (team members will use the scikit-learn python library)
-  * Task 2a (assigned to team member A)
-  * Task 2b (assigned to team member B)
-* Task 3
-* ...
+We also used ECCO tutorial: https://ecco-v4-python-tutorial.readthedocs.io/ 
 
 ## Project Results
 
-Use this section to briefly summarize your project results. This could take the form of describing the progress your team made to answering a research question, developing a tool or tutorial, interesting things found in exploring a new dataset, lessons learned for applying a new method, personal accomplishments of each team member, or anything else the team wants to share.
+ECCO’s dynamical sea surface height can be decomposed into manometric (mass-related) and steric (density-related) components across most of the global oceans. In shelf regions, mass changes tend to play a more significant role, whereas in the open ocean, density changes are generally dominant. Within the steric component, thermosteric effects (temperature-related) are typically more influential than halosteric effects (salinity-related). There are notable regional differences in the effects of these components: over the European shelf, the manometric component ($\eta_m$) is the primary driver of total sea level variability, while in the eastern tropical Atlantic, particularly the Gulf of Guinea, the steric component ($\eta_s$) dominates total sea level variability, with $\eta_m$ contributing mainly to long-term trends.
 
-You could include figures or images here, links to notebooks or code elsewhere in the repository (such as in the [notebooks](notebooks/) folder), and information on how others can run your notebooks or code.
+
+Our final powerpoint slide can be found here: [FINAL PROJECT SLIDE](https://drive.google.com/file/d/1nhWoUrIOIigZVH29XEUw1yShPFtxQBmy/view?usp=sharing)
+
+
